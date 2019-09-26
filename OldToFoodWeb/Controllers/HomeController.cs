@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ClassLibrary1.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,9 +9,15 @@ namespace OldToFoodWeb.Controllers
 {
     public class HomeController : Controller
     {
+        IRestaurantData db; 
+        public HomeController()
+        {
+            db = new InMemoryRestaurantData();
+        }
         public ActionResult Index()
         {
-            return View();
+            var model = db.GetAll();
+            return View(model);
         }
 
         public ActionResult About()
