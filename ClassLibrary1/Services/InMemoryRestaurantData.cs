@@ -14,7 +14,7 @@ namespace ClassLibrary1.Services
             {
                 new Restaurant{ Id = 1, Name = "spaggethi", Cuisine = CuisineType.Italian},
                 new Restaurant{ Id = 2, Name = "curry ", Cuisine = CuisineType.Indian},
-                new Restaurant{ Id = 1, Name = "tacos", Cuisine = CuisineType.Mexican},
+                new Restaurant{ Id = 1, Name = "tacos", Cuisine = CuisineType.Mexican}
             };
         }
         public IEnumerable<Restaurant> GetAll()
@@ -24,4 +24,3 @@ namespace ClassLibrary1.Services
     }
 }
 
-z
