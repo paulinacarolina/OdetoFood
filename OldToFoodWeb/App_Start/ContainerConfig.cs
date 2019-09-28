@@ -11,8 +11,7 @@ namespace OldToFoodWeb.App_Start
     {
         internal static void RegisterContainer()
         {
-            var builder = new ContainerBuilder();
-            builder.RegisterControllers(typeof(MvcApplication))
+
         }
     }
 }
