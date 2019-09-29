@@ -17,10 +17,17 @@ namespace ClassLibrary1.Services
                 new Restaurant{ Id = 1, Name = "tacos", Cuisine = CuisineType.Mexican}
             };
         }
+
+        public Restaurant Get(int id)
+        {
+            return restaurants.FirstOrDefault(r => r.Id == id);
+        }
+
         public IEnumerable<Restaurant> GetAll()
         {
             return restaurants.OrderBy(r => r.Name);
         }
+
     }
 }
 
