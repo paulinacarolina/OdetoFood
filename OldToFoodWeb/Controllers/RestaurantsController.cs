@@ -1,4 +1,5 @@
-﻿using ClassLibrary1.Services;
+﻿using ClassLibrary1.Models;
+using ClassLibrary1.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,9 +30,21 @@ namespace OldToFoodWeb.Controllers
             }
             return View(model);
         }
+
+        [HttpGet]
         public ActionResult Create()
         {
           
+            return View();
+        }
+
+        
+        //creating the function which creates the restaurant
+        [HttpPost] //specifying it only reacts on a post method
+        [ValidateAntiForgeryToken]
+        public ActionResult Create(Restaurant restaurant )
+        {
+            db.Add(restaurant);//adding a resta
             return View();
         }
 

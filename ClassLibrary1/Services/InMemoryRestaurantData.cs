@@ -27,7 +27,10 @@ namespace ClassLibrary1.Services
         {
             return restaurants.OrderBy(r => r.Name);
         }
-
+        public void Add(Restaurant restaurant)
+        {
+            restaurants.Add(restaurant);
+        }
     }
 }
 
