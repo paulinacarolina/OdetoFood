@@ -11,6 +11,7 @@ namespace ClassLibrary1.Services
         // list of restaurants 
         IEnumerable<Restaurant> GetAll();
         Restaurant Get(int id);
+        void Add(Restaurant restaurant);
     }
 }
 
