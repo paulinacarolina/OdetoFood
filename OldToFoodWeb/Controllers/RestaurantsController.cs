@@ -44,7 +44,15 @@ namespace OldToFoodWeb.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create(Restaurant restaurant )
         {
-            db.Add(restaurant);//adding a resta
+            if (String.IsNullOrEmpty(restaurant.Name))
+            {
+                ModelState.AddModelError(nameof(restaurant.Name), "The name is required");
+            }
+            if (ModelState.IsValid)
+            {
+                db.Add(restaurant);//adding a resta
+               
+            }
             return View();
         }
 

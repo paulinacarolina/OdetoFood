@@ -30,6 +30,7 @@ namespace ClassLibrary1.Services
         public void Add(Restaurant restaurant)
         {
             restaurants.Add(restaurant);
+
         }
     }
 }
