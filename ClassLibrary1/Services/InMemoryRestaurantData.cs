@@ -30,6 +30,9 @@ namespace ClassLibrary1.Services
         public void Add(Restaurant restaurant)
         {
             restaurants.Add(restaurant);
+            // creating the false id to the new restaurant 
+            restaurant.Id = restaurants.Max(r => r.Id) + 1;
+
 
         }
     }
