@@ -31,7 +31,7 @@ namespace OldToFoodWeb.Controllers
             return View(model);
         }
 
-        [HttpGet]
+        [HttpGet]//gett resourcer to show the view
         public ActionResult Create()
         {
           
@@ -44,14 +44,11 @@ namespace OldToFoodWeb.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create(Restaurant restaurant )
         {
-            if (String.IsNullOrEmpty(restaurant.Name))
-            {
-                ModelState.AddModelError(nameof(restaurant.Name), "The name is required");
-            }
+           
             if (ModelState.IsValid)
             {
                 db.Add(restaurant);//adding a resta
-               
+                return RedirectToAction("Details", new { id = restaurant.Id }); //create details view for an specific ID  
             }
             return View();
         }
