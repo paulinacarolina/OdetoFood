@@ -15,6 +15,8 @@ namespace ClassLibrary1.Models
         [RegularExpression("*")]
         [DataType(DataType.Text)]
         public string Name { get; set; }
+
+        [Display(Name= "Type of Food")]
         public CuisineType  Cuisine { get; set; }
     }
 }
