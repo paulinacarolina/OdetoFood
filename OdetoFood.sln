@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OldToFoodWeb", "OldToFoodWe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OdetoFoodData", "ClassLibrary1\OdetoFoodData.csproj", "{1BFC2388-BECC-490A-861F-6A5048345525}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{EB1BC918-FABB-4CBF-BAE0-B71266C63518}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{1BFC2388-BECC-490A-861F-6A5048345525}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1BFC2388-BECC-490A-861F-6A5048345525}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1BFC2388-BECC-490A-861F-6A5048345525}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB1BC918-FABB-4CBF-BAE0-B71266C63518}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB1BC918-FABB-4CBF-BAE0-B71266C63518}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB1BC918-FABB-4CBF-BAE0-B71266C63518}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB1BC918-FABB-4CBF-BAE0-B71266C63518}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
