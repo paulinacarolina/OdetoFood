@@ -198,6 +198,8 @@
     <Content Include="Views\Restaurants\Details.cshtml" />
     <Content Include="Views\Restaurants\NotFound.cshtml" />
     <Content Include="Views\Restaurants\Create.cshtml" />
+    <Content Include="Views\Shared\_RestaurantSummary.cshtml" />
+    <Content Include="Views\Restaurants\View.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
